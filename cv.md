@@ -22,5 +22,22 @@ Creating, editing, printing various types of polygraphy products
 
 -----------------------
 
+### Education
+
+__2010 - 2014__
+Bachelor’s Degree
+National Technical University of Ukraine "Igor Sikorsky Kyiv Polytechnic Institute"
+Specialty: "Optical Technologies"
+Full-time form of study
+
+
+__2006 - 2010__
+Diploma of Junior Specialist 
+State Higher Educational Institution "Kyiv Energetic College"
+Specialty: "Installation and operation of equipment for nuclear power plants"
+Full-time form of study
+
+------------------
+
 ### Additional information
 I'm responsible, have logical thinking, purposeful, without bad habits
