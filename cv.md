@@ -15,27 +15,27 @@ In July 2021, I stumbled upon free online programming courses from RS-School and
 ---------
 
 ### Work experience
-__2014 - current time__
-Studio of polygraphy iCan
-Responsibilities:
-Creating, editing, printing various types of polygraphy products
+__2014 - current time__  
+Studio of polygraphy iCan  
+Responsibilities:  
+Creating, editing, printing various types of polygraphy products  
 
 -----------------------
 
 ### Education
 
-__2010 - 2014__
-Bachelor’s Degree
-National Technical University of Ukraine "Igor Sikorsky Kyiv Polytechnic Institute"
-Specialty: "Optical Technologies"
-Full-time form of study
+__2010 - 2014__  
+Bachelor’s Degree  
+National Technical University of Ukraine "Igor Sikorsky Kyiv Polytechnic Institute"  
+Specialty: "Optical Technologies"  
+Full-time form of study  
 
 
-__2006 - 2010__
-Diploma of Junior Specialist 
-State Higher Educational Institution "Kyiv Energetic College"
-Specialty: "Installation and operation of equipment for nuclear power plants"
-Full-time form of study
+__2006 - 2010__  
+Diploma of Junior Specialist   
+State Higher Educational Institution "Kyiv Energetic College"  
+Specialty: "Installation and operation of equipment for nuclear power plants"  
+Full-time form of study  
 
 ------------------
 
