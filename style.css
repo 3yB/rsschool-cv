@@ -1,0 +1,73 @@
+.clearfix:after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+.container-main {
+    max-width: 720px;
+    margin: 0 auto;
+    // border: 1px solid black;
+}
+
+h1 {
+    font-size: 2.5em;
+}
+
+.avatar {
+    float: left;
+    width: 20%;
+    min-width: 160px;
+    padding-top: 20px;
+    padding-right: 20px;
+}
+
+.avatar_image {
+    width: 150px;
+    border-radius: 40%;
+}
+
+.info {
+    float: left;
+}
+
+.left-title-container {
+    float: left;
+    width: 15%;
+    min-width: 100px;
+}
+
+.right-title-container {
+    float: left;
+    width: 85%;
+    border-top: 1px solid grey;
+}
+
+ul.skills,
+ul.languages {
+    padding: 0;
+    margin-left: 15px;
+}
+
+footer {
+    border-top: 3px solid black;
+}
+
+.footer-item {
+    float: left;
+    min-width: 33.3%;
+    text-align: center;
+    padding-top: 20px;
+    padding-bottom: 20px;
+}
+
+.github-logo,
+.rss-logo {
+    height: 20px;
+}
+
+time {
+    font-size: 20px;
+    font-weight: bold;
+    text-decoration: underline;
+}
