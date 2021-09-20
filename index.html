@@ -5,43 +5,101 @@
         <meta http-equiv="X-UA-Compatible" content="IE=edge" />
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
         <link rel="stylesheet" href="style.css" />
+        <link
+            rel="stylesheet"
+            href="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.15.9/styles/default.min.css"
+        />
+        <script src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.15.9/highlight.min.js"></script>
+        <script>
+            hljs.initHighlightingOnLoad();
+        </script>
+
+        
+
         <title>CV-3yB</title>
     </head>
     <body>
         <div class="container-main">
-            <header>
+            <header id="home">
+                <nav>
+                    <div class="hamburger__menu">
+                        <input id="menu__toggle" type="checkbox" />
+                        <label class="menu__btn" for="menu__toggle">
+                            <span></span>
+                        </label>
+
+                        <ul class="menu__box">
+                            <li><a class="menu__item" href="#home">Home</a></li>
+                            <li>
+                                <a class="menu__item" href="#contacts">Contacts</a>
+                            </li>
+                            <li>
+                                <a class="menu__item" href="#about">About</a>
+                            </li>
+                            <li>
+                                <a class="menu__item" href="#skills">Skills</a>
+                            </li>
+                            <li><a class="menu__item" href="#code">Code</a></li>
+                            <li>
+                                <a class="menu__item" href="#projects">Projects</a>
+                            </li>
+                            <li><a class="menu__item" href="#work">Work</a></li>
+                            <li>
+                                <a class="menu__item" href="#education">Education</a>
+                            </li>
+                            <li>
+                                <a class="menu__item" href="#languages">Languages </a>
+                            </li>
+                        </ul>
+                    </div>
+                </nav>
+
                 <div class="clearfix">
-                    <div class="avatar">
+                    <section class="avatar">
+                        <h2 class="display-none">Avatar</h2>
                         <img
                             class="avatar_image"
                             src="avatar.jpg"
                             alt="Avatar"
                         />
-                    </div>
-                    <div class="info">
+                    </section>
+                    <div class="info" >
                         <section class="name">
                             <h1>Oleksandr Hlavin</h1>
                         </section>
-                        <section class="object">
+                        <section class="object"  id="contacts">
                             <h2>Trainee/Junior Frontend Developer</h2>
                         </section>
 
-                        <div class="contacts">
-                            <ul>
+                        <section class="contacts"  >
+                            <h2 class="display-none">Contacts</h2>
+                            <ul >
                                 <li>Location: Kyiv, Ukraine</li>
-                                <li>Phone: +380996462730</li>
-                                <li>Email: kempoman1991@gmail.com</li>
-                                <li>Discord: AL3X#3597</li>
+                                <li>
+                                    <a href="tel:+380996462730">
+                                        Phone: +380996462730
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="mailto:kempoman1991@gmail.com">
+                                        Email: kempoman1991@gmail.com</a
+                                    >
+                                </li>
+                                <li>
+                                    <a href="https://discord.com/"
+                                        >Discord: AL3X#3597</a
+                                    >
+                                </li>
                             </ul>
-                        </div>
+                        </section>
                     </div>
                 </div>
             </header>
 
-            <main>
-                <div class="clearfix">
+            <main >
+                <section class="clearfix" id="about" >
                     <div class="left-title-container">
-                        <h3>About me</h3>
+                        <h3>About</h3>
                     </div>
                     <div class="right-title-container">
                         <p>
@@ -50,9 +108,9 @@
                             May the force be with you !!!
                         </p>
                     </div>
-                </div>
+                </section>
 
-                <div class="clearfix">
+                <section class="clearfix" id="skills">
                     <div class="left-title-container">
                         <h3>Skills</h3>
                     </div>
@@ -64,26 +122,91 @@
                             <li>Git</li>
                         </ul>
                     </div>
-                </div>
+                </section>
 
-                <div class="clearfix">
+                <section class="clearfix" id="code">
                     <div class="left-title-container">
                         <h3>Code</h3>
                     </div>
                     <div class="right-title-container">
-                        <pre><code>
-    for (let n = 1; n &lt;= 100; n++) {
-        let output = "";
-        if (n % 3 == 0) output += "Fizz";
-        if (n % 5 == 0) output += "Buzz";
-        if (n % 3 == 0 &  % 5 == 0) output += "FizzBuzz"
-        console.log(output || n);
-    }                            
+                        <pre><code style="background-color: #d3e3f0;">
+for (let n = 1; n &lt;= 100; n++) {
+  let output = "";
+
+  if (n % 3 === 0) {
+    output += "Fizz";
+  }
+  if (n % 5 === 0) {
+    output += "Buzz";
+  }
+  if (n % 3 === 0 & n % 5 === 0) {
+    output += "FizzBuzz";
+  }
+
+  console.log(output || n);
+}                            
                         </code></pre>
                     </div>
-                </div>
+                </section>
 
-                <div class="clearfix">
+                <section class="projects clearfix" id="projects">
+                    <div class="left-title-container">
+                        <h3>Projects</h3>
+                    </div>
+                    <div class="right-title-container">
+                        <section class="project">
+                            <h4>Vertical Slider</h4>
+
+                            <a
+                                href="https://rolling-scopes-school.github.io/3yb-JSFEPRESCHOOL/vertical-slider/"
+                                target="_blank"
+                            >
+                                <div class="project-details">
+                                    <p class="project-description">
+                                        Vertical infinite two-section slider,
+                                        which can be controlled by on-screen
+                                        buttons, keyboard buttons, and mouse
+                                        swiping.
+                                    </p>
+                                    <p class="project-technologies">
+                                        Technologies: HTML, CSS, JS.
+                                    </p>
+                                    <p>Click to see project</p>
+                                </div>
+                                <img src="/Project-Slider.jpg" alt="Slider" />
+                            </a>
+                        </section>
+                        <section class="project">
+                            <h4>Custom Video Player</h4>
+                            <a
+                                href="https://rolling-scopes-school.github.io/3yb-JSFEPRESCHOOL/custom-video-player/"
+                                target="_blank"
+                            >
+                                <div class="project-details">
+                                    <p class="project-description">
+                                        A customised HTML5 video player with
+                                        custom functionality and custom control
+                                        buttons: play/pause, managing volume,
+                                        playback rate, rewind, select
+                                        next/previos video, fullscreen mode,
+                                        etc.<br />
+                                        Some function avaible from keyboard.
+                                    </p>
+                                    <p class="project-technologies">
+                                        Technologies: HTML, CSS, JS.
+                                    </p>
+                                    <p>Click to see project</p>
+                                </div>
+                                <img
+                                    src="/Project-Custom-Video-Player.jpg"
+                                    alt="Slider"
+                                />
+                            </a>
+                        </section>
+                    </div>
+                </section>
+
+                <section class="clearfix" id="work">
                     <div class="left-title-container">
                         <h3>Work</h3>
                     </div>
@@ -96,9 +219,9 @@
                             polygraphy products <br />
                         </p>
                     </div>
-                </div>
+                </section>
 
-                <div class="clearfix">
+                <section class="clearfix" id="education">
                     <div class="left-title-container">
                         <h3>Education</h3>
                     </div>
@@ -122,9 +245,9 @@
                             Full-time form of study <br />
                         </p>
                     </div>
-                </div>
+                </section>
 
-                <div class="clearfix">
+                <section class="clearfix" id="languages">
                     <div class="left-title-container">
                         <h3>Languages</h3>
                     </div>
@@ -135,7 +258,7 @@
                             <li>English - elementary</li>
                         </ul>
                     </div>
-                </div>
+                </section>
             </main>
 
             <footer>
@@ -164,5 +287,7 @@
                 </div>
             </footer>
         </div>
+
+        <script src="/main.js"></script>
     </body>
 </html>

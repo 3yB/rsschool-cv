@@ -4,10 +4,40 @@
     clear: both;
 }
 
+* {
+    box-sizing: border-box;
+    color: rgb(0, 0, 0);
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    background-color: #d3e3f0; // #cde1f0
+    padding: 0px;
+    margin: 0px;
+}
+
+.display-none {
+    display: none;
+}
+
+a {
+    text-decoration: none;
+}
+
+code {
+    background-color: #d3e3f0;
+}
+
 .container-main {
+    position: relative;
     max-width: 720px;
     margin: 0 auto;
-    // border: 1px solid black;
+    padding-left: 10px;
+    /* border: 1px solid black; */
+    min-width: 320px;
 }
 
 h1 {
@@ -31,6 +61,10 @@ h1 {
     float: left;
 }
 
+.contacts li {
+    list-style-type: disc;
+}
+
 .left-title-container {
     float: left;
     width: 15%;
@@ -45,8 +79,11 @@ h1 {
 
 ul.skills,
 ul.languages {
-    padding: 0;
-    margin-left: 15px;
+    padding-left: 25px;
+}
+
+ul.skills li {
+    list-style-type: circle;
 }
 
 footer {
@@ -64,10 +101,213 @@ footer {
 .github-logo,
 .rss-logo {
     height: 20px;
+    transition: 500ms;
+}
+
+.github-logo:hover,
+.rss-logo:hover {
+    transform: scale(1.2);
 }
 
 time {
     font-size: 20px;
     font-weight: bold;
     text-decoration: underline;
+}
+
+.contacts a:hover {
+    color: rgb(236, 58, 111);
+}
+
+.project {
+    padding-bottom: 20px;
+    position: relative;
+}
+
+.project h4 {
+    text-align: center;
+}
+
+.project img {
+    margin: 0 auto;
+    display: block;
+    width: 93%;
+    transition: 1000ms;
+}
+
+.project:hover .project-details {
+    opacity: 1;
+}
+
+.project a:hover img {
+    opacity: 0.3;
+    transform: scale(1.05);
+}
+
+.project-details {
+    font-family: "Courier New", Courier, monospace;
+    text-align: center;
+    position: absolute;
+    width: 100%;
+    padding: 0% 3%;
+    font-weight: bold;
+    z-index: 100;
+    opacity: 0;
+    transition: 1000ms;
+}
+
+.hamburger__menu {
+    z-index: 999;
+    background-color: #d3e3f0;
+}
+
+.menu__box a:hover {
+    color: rgb(236, 58, 111);
+    transition: 200ms;
+    transform: scale(1.1);
+}
+
+#menu__toggle {
+    display: none;
+    z-index: 999;
+}
+
+.menu__btn {
+    display: flex;
+    align-items: center;
+    position: fixed;
+    top: 45px;
+    right: 20px;
+    width: 26px;
+    height: 26px;
+    cursor: pointer;
+    z-index: 999;
+    visibility: hidden;
+}
+
+.menu__btn > span,
+.menu__btn > span::before,
+.menu__btn > span::after {
+    display: block;
+    position: absolute;
+    width: 100%;
+    height: 2px;
+    background-color: black;
+}
+.menu__btn > span::before {
+    content: "";
+    top: -8px;
+}
+.menu__btn > span::after {
+    content: "";
+    top: 8px;
+}
+
+nav {
+    position: relative;
+    height: 30px;
+    width: 100%;
+    margin: 0px;
+    padding: 0px;
+}
+
+nav {
+    height: 30px;
+}
+
+.menu__box {
+    height: 50px;
+    margin: 0px;
+    padding: 0px;
+    width: 100%;
+    max-width: 720px;
+    position: fixed;
+    top: 0px;
+    display: flex;
+    justify-content: space-between;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    background-color: #d3e3f0;
+    z-index: 995; /*  индекс меньше индекса иконки меню */
+}
+
+.menu__box li {
+    list-style-type: none;
+    display: flex;
+    align-items: center;
+    margin-right: 10px;
+}
+
+#menu__toggle:checked ~ .menu__btn > span {
+    transform: rotate(45deg);
+}
+#menu__toggle:checked ~ .menu__btn > span::before {
+    top: 0;
+    transform: rotate(0);
+}
+#menu__toggle:checked ~ .menu__btn > span::after {
+    top: 0;
+    transform: rotate(90deg);
+}
+
+#menu__toggle:checked ~ .menu__box {
+    visibility: visible;
+    flex-direction: column;
+    top: 40px;
+    right: 0px;
+    width: auto;
+    height: auto;
+    padding: 35px 25px 10px 25px;
+    border-radius: 5px;
+}
+
+@media screen and (max-width: 678px) {
+    .right-title-container {
+        width: 100%;
+    }
+    .left-title-container {
+        width: 100%;
+    }
+}
+
+@media screen and (max-width: 550px) {
+    .menu__box {
+        visibility: hidden;
+    }
+
+    .menu__btn {
+        visibility: visible;
+    }
+
+    .menu__box {
+        background-color: cornflowerblue;
+    }
+
+    .menu__box li {
+        padding-bottom: 10px;
+    }
+
+    .menu__item {
+        font-size: 20px;
+        color: rgb(230, 252, 32); // rgb(230, 252, 32)
+    }
+}
+
+@media screen and (max-width: 520px) {
+    .project-description {
+        display: none;
+    }
+    .project-details {
+        padding-top: 10%;
+    }
+}
+
+@media screen and (max-width: 400px) {
+    .project-technologies {
+        display: none;
+    }
+
+    .project-details {
+        padding-top: 15%;
+    }
 }
